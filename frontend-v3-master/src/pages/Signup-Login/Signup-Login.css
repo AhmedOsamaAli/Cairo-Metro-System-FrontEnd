@@ -1,0 +1,174 @@
+:root {
+	/* Light-Mode Colors: */
+	--SL-primary-color: #da2c43;
+	--SL-secondary-color: #f9f7f3;
+	--SL-trim-color: #da2c43;
+	--SL-textBox-color: #fff;
+	--SL-text-color: #333;
+	/* Dark-Mode Colors:*/
+	/* --primary-color: #171717;
+	--secondary-color: #444444;
+	--trim-color: #da2c43;
+	--textBox-color: #c9cfca;
+	--text-color: #ededed; */
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.SL-Page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 900px;
+	padding: 50px;
+}
+.SL-container {
+	position: relative;
+	max-width: 700px;
+	width: 100%;
+	background: var(--SL-secondary-color);
+	padding: 25px;
+	border-radius: 8px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+	/* i added this extra so the login isnt so small */
+	min-width: 500px;
+}
+/* I also added this part. for the login width */
+/* Media query for screens smaller than 400px */
+@media (max-width: 500px) {
+	.SL-container {
+		min-width: auto; /* Remove the minimum width */
+	}
+}
+.SL-container header {
+	font-size: 1.5rem;
+	color: var(--SL-text-color);
+	font-weight: 500;
+	text-align: center;
+}
+.SL-container .SL-form {
+	margin-top: 30px;
+}
+.SL-form .SL-input-box {
+	width: 100%;
+	margin-top: 20px;
+}
+.SL-input-box label {
+	color: var(--SL-text-color);
+}
+.SL-input-box input {
+	background-color: var(--SL-textBox-color);
+}
+.SL-form :where(.SL-input-box input, .select-box) {
+	position: relative;
+	height: 50px;
+	width: 100%;
+	outline: none;
+	font-size: 1rem;
+	color: #707070;
+	margin-top: 8px;
+	border: 1px solid #dddddd;
+	border-radius: 6px;
+	padding: 0 15px;
+}
+.SL-input-box input:focus {
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.SL-form .SL-column {
+	display: flex;
+	column-gap: 15px;
+}
+.SL-form .SL-gender-box {
+	margin-top: 20px;
+}
+.SL-gender-box h3 {
+	color: var(--SL-text-color);
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+.SL-form :where(.SL-gender-option, .SL-gender) {
+	display: flex;
+	align-items: center;
+	column-gap: 50px;
+	flex-wrap: wrap;
+}
+.SL-form .SL-gender {
+	column-gap: 5px;
+}
+.SL-gender input {
+	accent-color: var(--SL-trim-color);
+}
+.SL-form :where(.SL-gender input, .SL-gender label) {
+	cursor: pointer;
+}
+.SL-gender label {
+	color: var(--SL-text-color);
+}
+.address :where(input, .select-box) {
+	margin-top: 15px;
+}
+.select-box select {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	border: none;
+	color: var(--SL-text-color);
+	font-size: 1rem;
+}
+.SL-form button {
+	height: 55px;
+	width: 100%;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 30px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	background: var(--SL-primary-color);
+}
+.SL-form button:hover {
+	background: var(--SL-primary-color);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+	.SL-form .SL-column {
+		flex-wrap: wrap;
+	}
+	.SL-form :where(.SL-gender-option, .SL-gender) {
+		row-gap: 15px;
+	}
+}
+
+.forgotPasswordLink {
+	color: lightblue;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.forgotPasswordLink:hover {
+	position: relative;
+	color: darkblue;
+}
+
+.forgotPasswordLink:hover::after {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: blue;
+	transform: scaleX(0);
+	transform-origin: left center;
+	transition: transform 0.3s;
+}
+
+.forgotPasswordLink:hover::after {
+	transform: scaleX(1);
+}

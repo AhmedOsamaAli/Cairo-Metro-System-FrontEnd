@@ -1,0 +1,163 @@
+:root {
+	/* Light-Mode Colors: */
+	--primary-color: #da2c43;
+	--secondary-color: #f9f7f3;
+	--trim-color: #da2c43;
+	--textBox-color: #fff;
+	--text-color: #fff;
+	/* Dark-Mode Colors:*/
+	/* --primary-color: #171717;
+	--secondary-color: #444444;
+	--trim-color: #da2c43;
+	--textBox-color: #c9cfca;
+	--text-color: #ededed; */
+}
+
+/* Get Ticket container CSS */
+.home-get-ticket-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-get-ticket-container .home-pickup {
+	-webkit-box-shadow: 0px 3px 11px 0px rgba(117, 117, 117, 1);
+	-moz-box-shadow: 0px 3px 11px 0px rgba(117, 117, 117, 1);
+	box-shadow: 0px 3px 11px 0px rgba(117, 117, 117, 1);
+	padding: 15px;
+	width: 750px;
+	background-color: #f8f8f8;
+	margin: auto;
+	/*margin-bottom: 150px;
+		khateebwashere*/
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+
+@media (max-width: 767px) {
+	.home-get-ticket-container .home-pickup {
+		width: 100%;
+		font-size: 15px;
+	}
+}
+
+.home-get-ticket-container .home-pickup p {
+	font-weight: bold;
+	margin: 10px 20px;
+}
+
+.home-get-ticket-container .home-pickup .home-from-to {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.home-get-ticket-container .home-pickup .home-from-to i {
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+}
+
+.home-get-ticket-container .home-pickup .home-from-to input {
+	width: 40%;
+	height: 45px;
+	background-color: #f0f3f5;
+	border: 0;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	padding: 10px;
+	outline: 0;
+}
+
+.home-get-ticket-container .home-pickup .home-from-to input:focus {
+	border: 2px solid#D52941;
+}
+
+.home-get-ticket-container .home-pickup .home-from-to input:focus::placeholder {
+	color: black;
+	font-weight: bold;
+}
+
+.home-get-ticket-container .pickup .home-date {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.home-get-ticket-container .home-pickup .home-date input {
+	width: 40%;
+	margin: 5px 20px;
+	height: 45px;
+	padding: 5px;
+	background-color: #f0f3f5;
+	border: 0;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	padding: 10px;
+	outline: 0;
+}
+
+.home-get-ticket-container .home-pickup .home-date input:focus {
+	border: 2px solid #d52941;
+}
+
+.home-get-ticket-container .home-pickup .home-date input:focus::placeholder {
+	color: black;
+	font-weight: bold;
+}
+
+.home-get-ticket-container a {
+	display: block;
+	margin-left: auto;
+	width: fit-content;
+	text-decoration: none;
+	color: white;
+	background-color: #d52941;
+	padding: 10px 15px;
+	border-radius: 6px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.home-get-ticket-container a:hover {
+	background-color: rgb(162, 50, 65);
+}
+
+/* train background CSS*/
+.home-train-image {
+	width: 100%;
+	margin-top: -119px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+
+.thePrice {
+	border: 2px solid darkgreen;
+	color: darkgreen;
+	background-color: rgb(103, 199, 103);
+	padding: 5px 25px;
+	border-radius: 4px;
+	margin-left: 6px;
+}
